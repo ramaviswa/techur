@@ -35,7 +35,9 @@ module "techurvnet" {
   location = var.loca
   resourcegroup1 = var.techurresourcegroup1
   resourcegroup2 = var.techurresourcegroup2
-  
+
+  rg1output = module.techurrg.rg1out
+  rg2output = module.techurrg.rg2out
 }
  module "techursubnet" {
    source ="./techurresources/subnet"
@@ -47,6 +49,8 @@ module "techurvnet" {
    subnet02 = var.techsubnet2
    subnetaddress1 = var.techaddress
    subnetaddress2 = var.techaddresss
+   vnet1output = module.techurvnet.vnet1out
+   vnet2output = module.techurvnet.vnet2out
  }
 
 module "techurvms" {

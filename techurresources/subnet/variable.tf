@@ -6,5 +6,6 @@ variable "subnet02" {}
 variable "subnetaddress1" {}
 variable "subnetaddress2" {}
 variable "resourcegroup2" {}
-
+variable "vnet2output"{}
+variable "vnet1output"{}
 

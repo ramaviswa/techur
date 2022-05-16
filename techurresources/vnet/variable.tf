@@ -7,3 +7,5 @@ variable "vnet2" {}
 variable "resourcegroup2" {}
 variable "addressy" {}
 
+variable "rg1output"{}
+variable "rg2output" {}
