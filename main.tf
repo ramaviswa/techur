@@ -1,7 +1,7 @@
 ##Backenddetails
-terraform {
+/*terraform {
   backend "azurerm" {}
-}
+}*/
 
 ## The below lines from 2 to 9 are providers details of terraform
 terraform {
@@ -70,4 +70,11 @@ module "techurvms" {
     nic2 = var.techurnic2
     pip2 = var.techurpip2
     vm2 = var.techurvm2
+  }
+  
+  module "techurnsg" {
+    source = "./techurresources/nsg"
+    networksecurtitygroup1 = var.nsgtech
+    resourcegroup1 = var.techurresourcegroup1
+    location = var.loca
   }

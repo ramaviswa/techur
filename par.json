@@ -25,5 +25,7 @@
         "vmsize" : "Standard_B1s", "create_option" : "FromImage", "vmname" : "techurvm2",
         "password" : "Viswa@333", "location" : "Australia Central","username":"techurvm2",
         "hostname" : "techurvm2","caching" : "ReadWrite"
-    }
+    },
+    "nsgtech" : { "nsgname" : "techurnsg1"}
+
 }

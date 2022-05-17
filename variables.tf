@@ -19,3 +19,4 @@ variable "techurvm1" {}
 variable "techurnic2" {}
 variable "techurpip2" {}
 variable "techurvm2" {}
+variable "nsgtech" {}
