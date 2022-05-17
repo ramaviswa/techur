@@ -1,7 +1,7 @@
 ##Backenddetails
-/*terraform {
+terraform {
   backend "azurerm" {}
-}*/
+}
 
 ## The below lines from 2 to 9 are providers details of terraform
 terraform {
