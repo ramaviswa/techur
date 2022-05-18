@@ -1,8 +1,8 @@
 ##Backenddetails
 
-terraform {
+/*terraform {
   backend "azurerm" {}
-}
+}*/
 
 ## The below lines from 2 to 9 are providers details of terraform
 terraform {
@@ -84,7 +84,7 @@ module "techurvms" {
   }
 
   module "techurappplan" {
-    source = "./techurresources/appplan"
+    source = "./techurresources/webappplan"
     resourcegroup1 = var.techurresourcegroup1
     appserviceplan = var.techurappserviceplan
     location = var.loca
