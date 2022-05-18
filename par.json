@@ -27,5 +27,6 @@
         "hostname" : "techurvm2","caching" : "ReadWrite"
     },
     "nsgtech" : { "nsgname" : "techurnsg1"},
-    "nsgtech1" : { "nsgname" : "techurnsg2"}
+    "nsgtech1" : { "nsgname" : "techurnsg2"},
+    "techurappserviceplan" : {"planname" : "techurappplan"}
 }

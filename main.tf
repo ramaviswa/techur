@@ -82,3 +82,10 @@ module "techurvms" {
     resourcegroup2 = var.techurresourcegroup2
 
   }
+
+  module "techurappplan" {
+    source = "./techurresources/appplan"
+    resourcegroup1 = var.techurresourcegroup1
+    appserviceplan = var.techurappserviceplan
+    location = var.loca
+  }
