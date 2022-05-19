@@ -88,5 +88,7 @@ module "techurvms" {
     resourcegroup1 = var.techurresourcegroup1
     appserviceplan1 = var.techurappserviceplan1
     location = var.loca
+    appservice = var.techurappservice
  }
+
 

@@ -28,5 +28,6 @@
     },
     "nsgtech" : { "nsgname" : "techurnsg1"},
     "nsgtech1" : { "nsgname" : "techurnsg2"},
-    "techurappserviceplan1" : {"planname" : "techurappplan"}
+    "techurappserviceplan1" : {"planname" : "techurappplan"},
+    "techurappservice" : {"servicename" : "techurappservice1"}
 }

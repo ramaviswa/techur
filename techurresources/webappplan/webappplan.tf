@@ -8,3 +8,11 @@ resource "azurerm_app_service_plan" "appplan1" {
     size = "S1"
 }
 }
+
+  resource "azurerm_app_service" "webapp" {
+    name = var.appservice.servicename
+    resource_group_name = var.resourcegroup1.rgname
+    location =  var.location
+    app_service_plan_id = azurerm_app_service_plan.appplan1.id
+
+  }
