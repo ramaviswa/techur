@@ -21,4 +21,4 @@ variable "techurpip2" {}
 variable "techurvm2" {}
 variable "nsgtech" {}
 variable "nsgtech1" {}
-##variable "techurappserviceplan" {}
+variable "techurappserviceplan1" {}

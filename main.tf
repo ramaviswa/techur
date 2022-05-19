@@ -9,7 +9,7 @@ terraform {
   required_providers {
     azurerm = {
       source = "hashicorp/azurerm"
-      version = "3.4.0"
+      version = "3.6.0"
     }
   }
 }
@@ -82,11 +82,10 @@ module "techurvms" {
     resourcegroup2 = var.techurresourcegroup2
 
   }
-/*
+
   module "techurappplan" {
     source = "./techurresources/webappplan"
     resourcegroup1 = var.techurresourcegroup1
-    appserviceplan = var.techurappserviceplan
+    appserviceplan1 = var.techurappserviceplan1
     location = var.loca
   }
-*/
