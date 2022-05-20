@@ -13,11 +13,19 @@ resource "azurerm_subnet" "subnet2" {
     resource_group_name   = var.resourcegroup2.rgname
     virtual_network_name = var.vnet2.vnetname
   address_prefixes        = var.subnetaddress2 
+
   depends_on = [
     var.vnet2output
   ]
 }
 
+resource "azurerm_subnet" "subnet3" {
+  name = var.subnet03.subname
+  resource_group_name = var.resourcegroup1
+  virtual_network_name = var.vnet1.vnetname
+  address_prefixes =  var.subnetaddress3
+  
+}
 output "subnet1id" {
   value = azurerm_subnet.subnet1.id
   

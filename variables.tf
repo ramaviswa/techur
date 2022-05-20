@@ -24,3 +24,5 @@ variable "nsgtech1" {}
 variable "techurappserviceplan1" {}
 variable "techurappservice" {}
 variable "appplan1" {}
+variable "techusubnet3" {}
+variable "techaddressss" {}

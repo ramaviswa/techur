@@ -57,6 +57,8 @@ module "techurvnet" {
    subnetaddress2 = var.techaddresss
    vnet1output = module.techurvnet.vnet1out
    vnet2output = module.techurvnet.vnet2out
+   subnet03 = var.techusubnet3
+   subnetaddress3 = var.techaddressss
  }
 
 module "techurvms" {
