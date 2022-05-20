@@ -21,7 +21,7 @@ resource "azurerm_subnet" "subnet2" {
 
 resource "azurerm_subnet" "subnet3" {
   name = var.subnet03.subname
-  resource_group_name = var.resourcegroup1
+  resource_group_name = var.resourcegroup1.rgname
   virtual_network_name = var.vnet1.vnetname
   address_prefixes =  var.subnetaddress3
   
