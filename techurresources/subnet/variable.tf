@@ -8,4 +8,6 @@ variable "subnetaddress2" {}
 variable "resourcegroup2" {}
 variable "vnet2output"{}
 variable "vnet1output"{}
+variable "subnet03" {}
+variable "subnetaddress3" {}
 
