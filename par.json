@@ -34,6 +34,8 @@
     "techurappservice" : {"servicename" : "techurappservice1"},
     "appplan1" : {"id": "appplan1"
     },
-    
+
     "techurappgwpip" : {"pipname" : "appgwpip"}
+    
+    
 }
