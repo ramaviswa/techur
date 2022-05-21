@@ -26,3 +26,4 @@ variable "techurappservice" {}
 variable "appplan1" {}
 variable "techsubnet3" {}
 variable "techaddressss" {}
+variable "techurappgwpip" {}

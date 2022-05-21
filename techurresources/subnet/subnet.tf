@@ -34,5 +34,8 @@ output "subnet2id" {
   value = azurerm_subnet.subnet2.id
   
 }
+output "subnet3id" {
+  value = azurerm_subnet.subnet3.id
+}
 
 
