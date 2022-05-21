@@ -95,12 +95,9 @@ module "techurvms" {
 
  }
 
-module "appgw" {
-  source = "./techurresources/appgw"
+module  "appgway" {
+  source = "./techurresources/Appgw"
   resourcegroup1 = var.techurresourcegroup1
   appgwpip = var.techurappgwpip
   location = var.loca
 }
-
-
-
