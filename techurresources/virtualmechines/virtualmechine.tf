@@ -15,7 +15,9 @@ resource "azurerm_public_ip" "pip1" {
   resource_group_name = var.resourcegroup1.rgname
   location            = var.vm1.location
   allocation_method   = "Static"
+
 }
+
 
 resource "azurerm_virtual_machine" "vm1" {
   name                  = var.vm1.vmname
