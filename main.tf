@@ -101,6 +101,6 @@ module "appgw" {
   apgwpip = var.techurappgwpip
   location = var.loca
   appgw = var.techappgw
-  subnetoutput3 = var.subnetoutput3
+  subnetoutput3 = module.techursubnet.subnet3id
   type = var.type1
 }

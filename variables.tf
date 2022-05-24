@@ -28,5 +28,4 @@ variable "techsubnet3" {}
 variable "techaddressss" {}
 variable "techurappgwpip" {}
 variable "techappgw" {}
-variable "subnetoutput3" {}
 variable "type1" {}
