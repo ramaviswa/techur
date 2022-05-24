@@ -102,5 +102,5 @@ module "appgw" {
   location = var.loca
   appgw = var.techappgw
   subnetoutput3 = var.subnetoutput3
-  
+  type = var.type1
 }
