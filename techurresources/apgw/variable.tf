@@ -1,3 +1,3 @@
 variable "apgwpip" {}
-variable "resourecgroup1" {}
+variable "resourcegroup1" {}
 variable "location" {}
