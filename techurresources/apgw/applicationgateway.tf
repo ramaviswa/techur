@@ -9,36 +9,34 @@ resource "azurerm_application_gateway" "appgw" {
   name = var.appgw.appname
   resource_group_name = var.resourcegroup1.rgname
   location = var.appgw.location
+  sku {
+    name = var.appgw.sku
+    tier  = var.appgw.tier
+    capacity = var.appgw.capacity
+  }
 
+  gateway_ip_configuration {
+    name = var.appgw.ipconfig.gipname
+    subnet_id = var.subnetoutput3
+  }
 
-sku {
-  name = var.appgw.sku
-  tier  = var.appgw.tier
-  capacity = var.appgw.capacity
-}
+  frontend_port {
+    name = var.appgw.fport
+    port = var.appgw.port
+  }
 
-gateway_ip_configuration {
-  name = var.appgw.ipconfig.gipname
-  subnet_id = var.subnetoutput3
-}
+  frontend_ip_configuration {
+      name = var.appgw.fipconfig.fipname
+      public_ip_address_id = azurerm_public_ip.apgwpip.id
+  }
 
-frontend_port {
-  name = var.appgw.fport
-  port = var.appgw.port
-}
-
-frontend_ip_configuaration {
-  name = var.appgw.fipconfig.fipname
-  public_ip_address_id = azurerm_public_ip.apgwpip.id
-}
-
-backend_address_pool { 
-  name = var.appgw.bapname
-}
+  backend_address_pool { 
+    name = var.appgw.bapname
+  }
 
 backend_http_settings { 
    name = var.appgw.bhttpname
-   cookie_baded_affinity = "Disabled"
+   cookie_based_affinity = "Disabled"
    port = 80
    protocol = "http"
    request_timeout = 60
