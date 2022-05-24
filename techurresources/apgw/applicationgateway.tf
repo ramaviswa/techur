@@ -54,6 +54,6 @@ request_routing_rule {
   rule_type = var.type
   http_listener_name = var.appgw.bhttpname
   backend_address_pool_name = var.appgw.bapname
-  backend_http_setting_name = var.appgw.bhttpname
+  backend_http_settings_name = var.appgw.bhttpname
 }
 }
