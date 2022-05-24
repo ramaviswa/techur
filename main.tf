@@ -96,7 +96,7 @@ module "techurvms" {
  }
 
 module "appgw" {
-  source = "./techurresources/applicationgateway"
+  source = "./techurresources/apgw"
   resourcegroup1 = var.techurresourcegroup1
   apgwpip = var.techurappgwpip
   location = var.loca
