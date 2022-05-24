@@ -9,7 +9,7 @@ resource "azurerm_application_gateway" "appgw" {
   name = var.appgw.appname
   resource_group_name = var.resourcegroup1.rgname
   location = var.appgw.location
-}
+
 
 sku {
   name = var.appgw.sku
@@ -57,4 +57,5 @@ request_routing_rule {
   http_listener_name = var.appgw.bhttpname
   backend_address_pool_name = var.appgw.bapname
   backend_http_setting_name = var.appgw.bhttpname
+}
 }
