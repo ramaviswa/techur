@@ -45,7 +45,7 @@ backend_http_settings {
 }
 
 http_listener {
-name = var.apgw.listname
+name = var.appgw.listname
 frontend_ip_configuration_name = var.appgw.fipconfig.fipname
 frontend_port_name = var.appgw.fport
 protocol = "http"
