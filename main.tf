@@ -100,4 +100,7 @@ module "appgw" {
   resourcegroup1 = var.techurresourcegroup1
   apgwpip = var.techurappgwpip
   location = var.loca
+  appgw = var.techappgw
+  subnetoutput3 = var.subnetoutput3
+  
 }
