@@ -44,8 +44,8 @@
      "fipconfig" : {"fipname" : "techurfip"}, "appgwpip" : {"id" : "appgwpip"},
      "bapname" : "techurbapool", "bhttpname" : "techurbahttpsetting", 
      "listname" : "listener1",
-     "rrrulename" : "techurroutingrule1", "type1" : "basic"
-},
-"type1":"basic"    
+     "rrrulename" : "techurroutingrule1", "type" : "basic"
+}
+
     
 }

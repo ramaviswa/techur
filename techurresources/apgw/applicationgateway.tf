@@ -38,7 +38,7 @@ backend_http_settings {
    name = var.appgw.bhttpname
    cookie_based_affinity = "Disabled"
    port = 80
-   protocol = "http"
+   protocol = "Http"
    request_timeout = 60
 }
 
@@ -46,12 +46,12 @@ http_listener {
 name = var.appgw.listname
 frontend_ip_configuration_name = var.appgw.fipconfig.fipname
 frontend_port_name = var.appgw.fport
-protocol = "http"
+protocol = "Http"
 }
 
 request_routing_rule {
   name = var.appgw.rrrulename
-  rule_type = var.type
+  rule_type = var.appgw.type
   http_listener_name = var.appgw.bhttpname
   backend_address_pool_name = var.appgw.bapname
   backend_http_settings_name = var.appgw.bhttpname
