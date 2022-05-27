@@ -37,14 +37,14 @@
     
 "techurappgwpip" : {"pipname" : "appgwpip"},
 "techappgw" : { "appname" : "techurappgw", "location" : "Australia Central",
-     "sku" : "Standard_Small", "tier" : "standard", "capacity" : "2", 
+     "sku" : "Standard_Small", "tier" : "Standard", "capacity" : "2", 
      "ipconfig" : {"gipname" : "techurappgwconfig"},
      "subnetoutput3" : "azurerm_subnet subnet3",
      "fport" : "techurfport", "port" : "80",
      "fipconfig" : {"fipname" : "techurfip"}, "appgwpip" : {"id" : "appgwpip"},
      "bapname" : "techurbapool", "bhttpname" : "techurbahttpsetting", 
      "listname" : "listener1",
-     "rrrulename" : "techurroutingrule1", "type" : "basic"
+     "rrrulename" : "techurroutingrule1", "type" : "Basic"
 }
 
     
