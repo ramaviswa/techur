@@ -18,7 +18,7 @@
     "techurvm1" : {"publisher" : "MicrosoftWindowsServer", 
         "offer" : "WindowsServer","sku" : "2019-Datacenter", "osdiskname" : "techurvmosdisk", 
         "caching" : "ReadWrite",  "hostname" : "techurvm1", "username" : "techurvm1", 
-        "vmsize": "Standard_B1s", "create_option":"FromImage","vmname":"techurvm1",
+        "vmsize": "Standard_DS1_v2", "create_option":"FromImage","vmname":"techurvm1",
         "password" : "Viswa@333","location":"Australia Central"},
     "techurnic2" : {"nicname" : "techurvm2nic", "ipconfig" :{"ipname" : "techurvm2ipconfig"}},
     "techurpip2" : {"ipname" : "techurvm2pip"},
