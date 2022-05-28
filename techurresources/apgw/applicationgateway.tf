@@ -5,7 +5,7 @@ resource "azurerm_public_ip" "apgwpip" {
   allocation_method = "Dynamic"
 }
 
-resource "azurerm_application_gateway" "appgw" {
+resource "azurerm_application_gateway" "applicationgateway" {
   name = var.appgw.appname
   resource_group_name = var.resourcegroup1.rgname
   location = var.appgw.location
