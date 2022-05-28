@@ -102,6 +102,10 @@ resource "azurerm_virtual_machine" "vm2" {
      value = azurerm_network_interface.nic1.id
    }
 
+   output "vm1nic1outputipconfigname"{
+     value = azurerm_network_interface.nic1.ip_configuration[0].name
+   }
+
    output "vm2outputprivate_ip_addresses" {
      value = azurerm_network_interface.nic2.ip_configuration[0].private_ip_address
    }
