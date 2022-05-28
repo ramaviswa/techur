@@ -33,6 +33,14 @@ resource "azurerm_application_gateway" "applicationgateway" {
   backend_address_pool { 
     name = var.appgw.bapname
   }
+  backend_address_pool { 
+    name = "Virtualmachine2docbackendpool"
+    ip_addresses = var.vm2outputprivate_ip_addresses
+  }
+
+  backend_address_pool { 
+    name = "Virtualmachine1imagesbackendpool"
+  }
 
 backend_http_settings { 
    name = var.appgw.bhttpname
@@ -56,4 +64,14 @@ request_routing_rule {
   backend_address_pool_name = var.appgw.bapname
   backend_http_settings_name = var.appgw.bhttpname
 }
+}
+
+data "azurerm_subscription" "current" {
+}
+
+
+resource "azurerm_network_interface_backend_address_pool_association" "example" {
+  network_interface_id    = var.vm1nic1outputid
+  ip_configuration_name   = "vm1nicaccsociation"
+  backend_address_pool_id = "/subscriptions/${data.azurerm_subscription.current.subscription_id}/resourceGroups/${var.resourcegroup1.rgname}/providers/Microsoft.Network/applicationGateways/${var.appgw.appname}/backendAddressPools/Virtualmachine1imagesbackendpool"
 }

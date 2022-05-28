@@ -97,3 +97,11 @@ resource "azurerm_virtual_machine" "vm2" {
       enable_automatic_upgrades = false  
   }
    }
+
+   output "vm1nic1outputid"{
+     value = azurerm_network_interface.nic1.id
+   }
+
+   output "vm2outputprivate_ip_addresses" {
+     value = azurerm_network_interface.nic2.ip_configuration[0].private_ip_address
+   }

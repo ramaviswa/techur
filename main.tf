@@ -102,5 +102,6 @@ module "appgw" {
   location = var.loca
   appgw = var.techappgw
   subnetoutput3 = module.techursubnet.subnet3id
-  
+  vm2outputprivate_ip_addresses= module.techurvms.vm2outputprivate_ip_addresses
+  vm1nic1outputid = module.techurvms.vm1nic1outputid
 }
