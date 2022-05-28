@@ -35,7 +35,7 @@ resource "azurerm_application_gateway" "applicationgateway" {
   }
   backend_address_pool { 
     name = "Virtualmachine2docbackendpool"
-    ip_addresses = var.vm2outputprivate_ip_addresses
+    ip_addresses = [var.vm2outputprivate_ip_addresses]
   }
 
   backend_address_pool { 
