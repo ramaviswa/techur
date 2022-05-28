@@ -70,8 +70,11 @@ data "azurerm_subscription" "current" {
 }
 
 
-resource "azurerm_network_interface_backend_address_pool_association" "example" {
+resource "azurerm_network_interface_backend_address_pool_association" "vm1nicassoc" {
   network_interface_id    = var.vm1nic1outputid
   ip_configuration_name   = "vm1nicaccsociation"
   backend_address_pool_id = "/subscriptions/${data.azurerm_subscription.current.subscription_id}/resourceGroups/${var.resourcegroup1.rgname}/providers/Microsoft.Network/applicationGateways/${var.appgw.appname}/backendAddressPools/Virtualmachine1imagesbackendpool"
+  depends_on = [
+    azurerm_application_gateway.applicationgateway
+  ]
 }
