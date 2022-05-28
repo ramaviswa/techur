@@ -91,7 +91,7 @@ module "techurvms" {
     appserviceplan1 = var.techurappserviceplan1
     location = var.loca
     appservice = var.techurappservice
-    appplan1 = var.applicationplan1
+    appplan1 = var.appplan1
 
  }
 
