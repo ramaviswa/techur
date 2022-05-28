@@ -52,7 +52,7 @@ protocol = "Http"
 request_routing_rule {
   name = var.appgw.rrrulename
   rule_type = var.appgw.type
-  http_listener_name = var.appgw.bhttpname
+  http_listener_name = var.appgw.listname
   backend_address_pool_name = var.appgw.bapname
   backend_http_settings_name = var.appgw.bhttpname
 }
