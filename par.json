@@ -24,7 +24,7 @@
     "techurpip2" : {"ipname" : "techurvm2pip"},
     "techurvm2": {"publisher" : "MicrosoftWindowsServer",
         "offer" : "WindowsServer", "sku" : "2019-Datacenter", "osdiskname" : "techurvmosdisk",
-        "vmsize" : "Standard DS1_v2", "create_option" : "FromImage", "vmname" : "techurvm2",
+        "vmsize" : "Standard_DS1_v2", "create_option" : "FromImage", "vmname" : "techurvm2",
         "password" : "Viswa@333", "location" : "Australia Central","username":"techurvm2",
         "hostname" : "techurvm2","caching" : "ReadWrite"
     },
