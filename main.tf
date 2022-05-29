@@ -104,5 +104,6 @@ module "appgw" {
   subnetoutput3 = module.techursubnet.subnet3id
   vm2outputprivate_ip_addresses= module.techurvms.vm2outputprivate_ip_addresses
   vm1nic1outputid = module.techurvms.vm1nic1outputid
+  webappoutput = module.techurappplan.WebappHostname
   vm1nic1outputipconfigname = module.techurvms.vm1nic1outputipconfigname
 }
