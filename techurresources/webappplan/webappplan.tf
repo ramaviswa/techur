@@ -14,5 +14,8 @@ resource "azurerm_app_service_plan" "appplan1" {
     resource_group_name = var.resourcegroup1.rgname
     location =  var.location
     app_service_plan_id = azurerm_app_service_plan.appplan1.id
+  }
 
+  output "WebappHostname" {
+    value = azurerm_app_service.webapp.default_site_hostname
   }
