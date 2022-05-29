@@ -44,7 +44,7 @@ resource "azurerm_application_gateway" "applicationgateway" {
    
   backend_address_pool {
     name = "webappbackendpool"
-    fqdns = var.webappoutput
+    fqdns = [var.webappoutput]
   }
 
 backend_http_settings { 
