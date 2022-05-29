@@ -54,7 +54,31 @@ backend_http_settings {
    protocol = "Http"
    request_timeout = 60
 }
+backend_http_settings  {
+  name = "Virtualmachine2docbackendpool-httpname"
+  cookie_based_affinity = "Disabled"
+  port = 80
+  protocol = "Http"
+  request_timeout = 60
 
+}
+backend_http_settings {
+  name = "Virtualmachine1imagesbackendpool-httpname" 
+  cookie_based_affinity = "Disabled"
+  port = 80
+  protocol = "Http"
+  request_timeout = 60
+
+}
+backend_http_settings {
+  name = "webappbackendpool-httpname"
+  cookie_based_affinity = "Disabled"
+  port = 443
+  protocol = "Https"
+  request_timeout = 60
+  
+  pick_host_name_from_backend_address  = true
+}
 http_listener {
 name = var.appgw.listname
 frontend_ip_configuration_name = var.appgw.fipconfig.fipname
