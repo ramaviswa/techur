@@ -43,7 +43,7 @@
      "fport" : "techurfport", "port" : "80",
      "fipconfig" : {"fipname" : "techurfip"}, "appgwpip" : {"id" : "appgwpip"},
      "bapname" : "techurbapool", "bhttpname" : "techurbahttpsetting", 
-     "listname" : "listener1",
+     "listname" : "listener1", "listname2": "listener2",
      "rrrulename" : "techurroutingrule1", "type" : "Basic"
 }
 

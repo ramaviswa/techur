@@ -85,6 +85,16 @@ frontend_ip_configuration_name = var.appgw.fipconfig.fipname
 frontend_port_name = var.appgw.fport
 protocol = "Http"
 }
+ 
+ http_listener {
+   name = var.appgw.listname2
+   frontend_ip_configuration_name = var.appgw.fipconfig.fipname
+   frontend_port_name = "80"
+   host_name = "0eda3588-b2bb-40c3-bd9f-b391522393cc.cloudapp.net"
+   protocol = "Http"
+
+ }
+
 
 request_routing_rule {
   name = var.appgw.rrrulename
@@ -93,6 +103,20 @@ request_routing_rule {
   backend_address_pool_name = var.appgw.bapname
   backend_http_settings_name = var.appgw.bhttpname
 }
+/*
+request_routing_rule {
+  name = var.appgw.routrulename
+  rule_type = var.appgw.type
+  http_listner_name = var.list.name
+  url_path_map_name = var.appgw.urlpathname
+   
+ }
+
+ url_path_map {
+   name = var.appgw.urlpathname
+
+ }*/
+
 }
 
 data "azurerm_subscription" "current" {
