@@ -119,7 +119,7 @@ request_routing_rule {
    name = var.appgw.urlpathmapname
    default_backend_address_pool_name = var.appgw.bapname
    default_backend_http_settings_name =var.appgw.bhttpname
-   default_redirect_configuration_name = var.appgw.rrrulename
+   ##default_redirect_configuration_name = var.appgw.rrrulename
 
    path_rule {
      name = var.appgw.pathrulename
