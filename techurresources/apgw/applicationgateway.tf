@@ -110,7 +110,7 @@ request_routing_rule {
 request_routing_rule {
   name = var.appgw.routrulename
   rule_type = "PathBasedRouting"
-  http_listner_name = var.appgw.listname2
+  http_listener_name = var.appgw.listname2
   url_path_map_name = var.appgw.urlpathname
    
  }
