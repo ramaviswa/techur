@@ -79,21 +79,24 @@ backend_http_settings {
   
   pick_host_name_from_backend_address  = true
 }
+
 http_listener {
-name = var.appgw.listname
-frontend_ip_configuration_name = var.appgw.fipconfig.fipname
-frontend_port_name = var.appgw.fport
-protocol = "Http"
+  name = var.appgw.listname
+  frontend_ip_configuration_name = var.appgw.fipconfig.fipname
+  frontend_port_name = var.appgw.fport
+  protocol = "Http"
 }
  
- http_listener {
+http_listener {
    name = var.appgw.listname2
    frontend_ip_configuration_name = var.appgw.fipconfig.fipname
-   frontend_port_name = "80"
+   frontend_port_name = var.appgw.fport
    host_name = "0eda3588-b2bb-40c3-bd9f-b391522393cc.cloudapp.net"
    protocol = "Http"
 
  }
+
+
 
 
 request_routing_rule {
