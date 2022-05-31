@@ -10,4 +10,7 @@ variable "vnet2output"{}
 variable "vnet1output"{}
 variable "subnet03" {}
 variable "subnetaddress3" {}
-
+ variable "subnet04" {}
+ variable "subnetaddress4" {}
+ variable "subnet05" {}
+ variable "subnetaddress5" {}

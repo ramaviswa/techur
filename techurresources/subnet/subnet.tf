@@ -26,6 +26,22 @@ resource "azurerm_subnet" "subnet3" {
   address_prefixes =  var.subnetaddress3
 }
 
+resource "azurerm_subnet" "subnet4" {
+  name = var.subnet04.subname
+  resource_group_name = var.resourcegroup1.rgname
+   virtual_network = var.vnet1.vnetname
+   address_prefixes = var.subnetaddress4
+}
+
+resource "azurerm_subnet" "subnet5" {
+  name = var.subnet05.subname
+  resource_group_name = var.resourcegroup2.rgname
+  virtual_network_name = var.vnet2.vnetname
+  address_prefixes = var.subnetaddress5
+}
+
+
+
 output "subnet1id" {
   value = azurerm_subnet.subnet1.id
   

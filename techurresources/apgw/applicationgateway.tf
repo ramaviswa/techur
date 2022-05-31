@@ -86,7 +86,8 @@ http_listener {
   frontend_port_name = var.appgw.fport
   protocol = "Http"
 }
- 
+}
+/* 
 http_listener {
    name = var.appgw.listname2
    frontend_ip_configuration_name = var.appgw.fipconfig.fipname
@@ -95,7 +96,7 @@ http_listener {
    protocol = "Http"
 
  }
-
+*/
 
 
 
@@ -106,7 +107,7 @@ request_routing_rule {
   backend_address_pool_name = var.appgw.bapname
   backend_http_settings_name = var.appgw.bhttpname
 }
-
+/*
 request_routing_rule {
   name = var.appgw.routrulename
   rule_type = "PathBasedRouting"
@@ -129,7 +130,7 @@ request_routing_rule {
    }
  }
 
-}
+}*/
 
 data "azurerm_subscription" "current" {
 }

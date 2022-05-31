@@ -29,3 +29,8 @@ variable "techaddressss" {}
 variable "techurappgwpip" {}
 variable "techappgw" {}
 variable "location1" {}
+variable "bastionsubnet" {}
+variable "techsubnet4" {}
+variable "techaddress4" {}
+variable "techursubnet5" {}
+variable "techaddress5" {}
