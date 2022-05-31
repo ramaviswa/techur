@@ -71,15 +71,16 @@ module "techurvms" {
     nic1 = var.techurnic1
     subnetoutput1 = module.techursubnet.subnet1id
     pip1 = var.techurpip1
+    pip3 = var.publicip3
+    pip4 = var.publicip4
     vm1 = var.techurvm1
     subnetoutput2 = module.techursubnet.subnet2id
     resourcegroup2 = var.techurresourcegroup2
     nic2 = var.techurnic2
     pip2 = var.techurpip2
     vm2 = var.techurvm2
-    pip3 = var.publicip3
-    pip4 = var.publicip4
-  }
+   
+    }
   
   module "techurnsg" {
     source = "./techurresources/nsg"
