@@ -98,7 +98,7 @@ module "techurvms" {
     appplan1 = var.appplan1
 
  }
-/*
+
 module "appgw" {
   source = "./techurresources/apgw"
   resourcegroup1 = var.techurresourcegroup1
@@ -110,4 +110,4 @@ module "appgw" {
   vm1nic1outputid = module.techurvms.vm1nic1outputid
   webappoutput = module.techurappplan.WebappHostname
   vm1nic1outputipconfigname = module.techurvms.vm1nic1outputipconfigname
-}*/
+}

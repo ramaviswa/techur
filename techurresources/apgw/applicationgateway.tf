@@ -4,7 +4,7 @@ resource "azurerm_public_ip" "apgwpip" {
   location = var.location
   allocation_method = "Dynamic"
 }
-/*
+
 resource "azurerm_application_gateway" "applicationgateway" {
   name = var.appgw.appname
   resource_group_name = var.resourcegroup1.rgname
@@ -86,8 +86,8 @@ http_listener {
   frontend_port_name = var.appgw.fport
   protocol = "Http"
 }
-}*/
-/* 
+
+ 
 http_listener {
    name = var.appgw.listname2
    frontend_ip_configuration_name = var.appgw.fipconfig.fipname
@@ -96,17 +96,14 @@ http_listener {
    protocol = "Http"
 
  }
-*/
 
-
-/*
 request_routing_rule {
   name = var.appgw.rrrulename
   rule_type = var.appgw.type
   http_listener_name = var.appgw.listname
   backend_address_pool_name = var.appgw.bapname
   backend_http_settings_name = var.appgw.bhttpname
-}*/
+}
 /*
 request_routing_rule {
   name = var.appgw.routrulename
@@ -128,13 +125,13 @@ request_routing_rule {
      backend_address_pool_name = "Virtualmachine1imagesbackendpool"
      backend_http_settings_name = "Virtualmachine1imagesbackendpool-httpname"     
    }
- }
+ }*/
 
-}*/
+}
 
 data "azurerm_subscription" "current" {
 }
-/*
+
 resource "azurerm_network_interface_application_gateway_backend_address_pool_association" "vm1nicassoc" {
   network_interface_id    = var.vm1nic1outputid
   ip_configuration_name   = var.vm1nic1outputipconfigname
@@ -142,4 +139,4 @@ resource "azurerm_network_interface_application_gateway_backend_address_pool_ass
   depends_on = [
     azurerm_application_gateway.applicationgateway
   ]
-}*/
+}
