@@ -4,7 +4,7 @@ resource "azurerm_public_ip" "apgwpip" {
   location = var.location
   allocation_method = "Dynamic"
 }
-
+/*
 resource "azurerm_application_gateway" "applicationgateway" {
   name = var.appgw.appname
   resource_group_name = var.resourcegroup1.rgname
@@ -86,7 +86,7 @@ http_listener {
   frontend_port_name = var.appgw.fport
   protocol = "Http"
 }
-}
+}*/
 /* 
 http_listener {
    name = var.appgw.listname2
