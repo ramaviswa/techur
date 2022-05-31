@@ -33,5 +33,5 @@ variable "techsubnet4" {}
 variable "techaddress4" {}
 variable "techursubnet5" {}
 variable "techaddress5" {}
-variable "techurpip3" {}
-variable "techurpip4" {}
+variable "publicip3" {}
+variable "publicip4" {}
