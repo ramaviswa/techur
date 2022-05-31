@@ -118,19 +118,19 @@ request_routing_rule {
    default_backend_http_settings_name =var.appgw.bhttpname
    ##default_redirect_configuration_name = var.appgw.rrrulename
 
-   path_rule =[{
+   path_rule {
      name = var.appgw.pathrulename1
      paths = ["/images/*"]
      backend_address_pool_name = "Virtualmachine1imagesbackendpool"
      backend_http_settings_name = "Virtualmachine1imagesbackendpool-httpname"     
-   },
-   {
+   }
+   path_rule {
     name = var.appgw.pathrulename2
      paths = ["/docs/*"]
      backend_address_pool_name = "Virtualmachine2docbackendpool"
      backend_http_settings_name = "Virtualmachine2docbackendpool-httpname" 
    }
-   ]
+
  }
 
 }
