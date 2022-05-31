@@ -22,6 +22,7 @@ resource "azurerm_public_ip" "pip3" {
   resource_group_name = var.resourcegroup1.rgname
   location = var.vm1.location
   allocation_method = "Static"
+  sku = "Standard"
 }
 
 
@@ -81,6 +82,7 @@ resource "azurerm_public_ip" "pip4" {
   resource_group_name = var.resourcegroup2.rgname
   location = var.vm2.location
   allocation_method = "Static"
+  sku = "Standard"
 }
 
 resource "azurerm_virtual_machine" "vm2" {
