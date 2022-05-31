@@ -134,7 +134,7 @@ request_routing_rule {
 
 data "azurerm_subscription" "current" {
 }
-
+/*
 resource "azurerm_network_interface_application_gateway_backend_address_pool_association" "vm1nicassoc" {
   network_interface_id    = var.vm1nic1outputid
   ip_configuration_name   = var.vm1nic1outputipconfigname
@@ -142,4 +142,4 @@ resource "azurerm_network_interface_application_gateway_backend_address_pool_ass
   depends_on = [
     azurerm_application_gateway.applicationgateway
   ]
-}
+}*/
