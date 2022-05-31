@@ -8,4 +8,5 @@ variable "resourcegroup2" {}
 variable "subnetoutput2" {}
 variable "pip2" {}
 variable "vm2" {}
-
+variable "pip3" {}
+variable "pip4" {}

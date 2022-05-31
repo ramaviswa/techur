@@ -77,6 +77,8 @@ module "techurvms" {
     nic2 = var.techurnic2
     pip2 = var.techurpip2
     vm2 = var.techurvm2
+    pip3 = var.bastionpip3
+    pip4 = var.bastionpip4
   }
   
   module "techurnsg" {

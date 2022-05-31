@@ -17,6 +17,12 @@ resource "azurerm_public_ip" "pip1" {
   allocation_method   = "Static"
 
 }
+resource "azurerm_public_ip" "pip3" {
+  name = var.pip3.ipname
+  resource_group_name = var.resourcegroup1.rgname
+  location = var.vm1.location
+  allocation_method = "Static"
+}
 
 
 resource "azurerm_virtual_machine" "vm1" {
@@ -67,6 +73,14 @@ resource "azurerm_public_ip" "pip2" {
   resource_group_name = var.resourcegroup2.rgname
   location            = var.vm2.location
   allocation_method   = "Static"
+
+}
+
+resource "azurerm_public_iP" "pip4" {
+  name = var.pip4.ipname
+  resource_group_name = var.resourcegroup2.rgname
+  location = var.vm2.location
+  allocation_method = "Static"
 }
 
 resource "azurerm_virtual_machine" "vm2" {
