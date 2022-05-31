@@ -76,7 +76,7 @@ resource "azurerm_public_ip" "pip2" {
 
 }
 
-resource "azurerm_public_iP" "pip4" {
+resource "azurerm_public_ip" "pip4" {
   name = var.pip4.ipname
   resource_group_name = var.resourcegroup2.rgname
   location = var.vm2.location
