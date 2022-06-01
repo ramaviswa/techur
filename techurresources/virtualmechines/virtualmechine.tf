@@ -7,7 +7,7 @@ resource "azurerm_network_interface" "nic1" {
     name                          = var.nic1.ipconfig.ipname
     subnet_id                     = var.subnetoutput1
     private_ip_address_allocation = "Dynamic"
-    public_ip_address_id         = azurerm_public_ip.pip1.id
+    ##public_ip_address_id         = azurerm_public_ip.pip1.id
   }
 }
 resource "azurerm_public_ip" "pip1" {
@@ -65,7 +65,7 @@ resource "azurerm_network_interface" "nic2" {
       name = var.nic2.ipconfig.ipname
       subnet_id = var.subnetoutput2
       private_ip_address_allocation = "Dynamic"
-      public_ip_address_id         = azurerm_public_ip.pip2.id
+      ##public_ip_address_id         = azurerm_public_ip.pip2.id
     }
 }
 
@@ -112,6 +112,33 @@ resource "azurerm_virtual_machine" "vm2" {
    os_profile_windows_config {
       enable_automatic_upgrades = false  
   }
+   }
+
+   resource "azurerm_bastion_host" "bastion1" {
+     name = var.vm1.vm1bastion
+     location = var.vm1.location
+     resource_group_name = var.resourcegroup1.rgname
+
+     ip_configuration {
+       name = var.vm1.ipconfig.ipname
+       subnet_id = var.subnetoutput4
+       public_ip_address_id = var.azurerm_public_ip.pip3
+
+       
+     }
+     
+   }
+
+   resource "azurerm_bastion_host" "bastion2"{
+     name = var.vm2.vm2bastion
+     location = var.vm2.location
+     reosurce_group_name = var.resourcegroup2.rgname
+
+     ip_configuration {
+       name = var.vm2.ipconfig.ipname
+       subnet_id = var.subnetoutput5
+       public_ip_address_id = var.azurerm_public_ip.pip4
+     }
    }
 
    output "vm1nic1outputid"{

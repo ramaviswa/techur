@@ -26,12 +26,12 @@
         "password" : "Viswa@333","location":"Australia Central"},
     "techurnic2" : {"nicname" : "techurvm2nic", "ipconfig" :{"ipname" : "techurvm2ipconfig"}},
     "techurpip2" : {"ipname" : "techurvm2pip"},"publicip3" : {"ipname" : "vm1bastionpip3"},
-    "publicip4" : {"ipname" : "vm2bastionpip4"},
+    "publicip4" : {"ipname" : "vm2bastionpip4"},"vm1bastion" :"techurvm1bastion1",
     "techurvm2": {"publisher" : "MicrosoftWindowsServer",
         "offer" : "WindowsServer", "sku" : "2019-Datacenter", "osdiskname" : "techurvmosdisk",
         "vmsize" : "Standard_DS1_v2", "create_option" : "FromImage", "vmname" : "techurvm2",
         "password" : "Viswa@333", "location" : "Australia Central","username":"techurvm2",
-        "hostname" : "techurvm2","caching" : "ReadWrite"
+        "hostname" : "techurvm2","caching" : "ReadWrite","vm2bastion" : "techurvm2bastion2"
         
          },
     "nsgtech" : { "nsgname" : "techurnsg1"},
