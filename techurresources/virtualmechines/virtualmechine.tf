@@ -130,7 +130,7 @@ resource "azurerm_virtual_machine" "vm2" {
    resource "azurerm_bastion_host" "bastion2"{
      name = var.vm2.vm2bastion
      location = var.vm2.location
-     reosurce_group_name = var.resourcegroup2.rgname
+     resource_group_name = var.resourcegroup2.rgname
 
      ip_configuration {
        name = var.vm2.ipconfig.ipname
