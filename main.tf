@@ -79,6 +79,8 @@ module "techurvms" {
     nic2 = var.techurnic2
     pip2 = var.techurpip2
     vm2 = var.techurvm2
+    subnetoutput4 = module.techursubnet.subnet4id
+    subnetoutput5 = module.techursubnet.subnet5id
    
     }
   
