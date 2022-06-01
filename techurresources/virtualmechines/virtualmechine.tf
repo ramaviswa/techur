@@ -122,9 +122,7 @@ resource "azurerm_virtual_machine" "vm2" {
      ip_configuration {
        name = var.vm1.ipconfig.ipname
        subnet_id = var.subnetoutput4
-       public_ip_address_id = var.azurerm_public_ip.pip3
-
-       
+       public_ip_address_id = azurerm_public_ip.pip3.id       
      }
      
    }
@@ -137,7 +135,7 @@ resource "azurerm_virtual_machine" "vm2" {
      ip_configuration {
        name = var.vm2.ipconfig.ipname
        subnet_id = var.subnetoutput5
-       public_ip_address_id = var.azurerm_public_ip.pip4
+       public_ip_address_id = azurerm_public_ip.pip4.id
      }
    }
 
