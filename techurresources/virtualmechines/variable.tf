@@ -12,5 +12,4 @@ variable "pip3" {}
 variable "pip4" {}
 variable "subnetoutput4" {}
 variable "subnetoutput5" {}
-variable "azurerm_public_ip.pip3" {}
-variable "azurerm_public_ip.pip4" {}
+
