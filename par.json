@@ -1,59 +1,150 @@
 {
-    "techurresourcegroup1" : {"rgname":"techurrg1"},
-    "techurresourcegroup2" : {"rgname":"techurrg2"},
-    "loc":"central india", "loca" : "australia central",
-    "techvnet1" : {"vnetname" : "techurvnet1inrg1"},
-    "techvnet2" : {"vnetname" : "techurvnet2inrg2"},
-    "vnetaddress1" : ["10.0.0.0/16"], "location1": "australia central",
-    
+    "techurresourcegroup1":{
+        "rgname":"techurrg1"
+    },
+    "techurresourcegroup2" : {
+        "rgname":"techurrg2"
+    },
+    "loc":"central india", 
+    "loca" : "australia central",
+    "techvnet1" : {
+        "vnetname" : "techurvnet1inrg1"
+    },
+    "techvnet2" : {
+        "vnetname" : "techurvnet2inrg2"
+    },
+    "vnetaddress1" : ["10.0.0.0/16"], 
+    "location1": "australia central",    
     "vnetaddress3" : ["80.0.0.0/16"],
-    "techsubnet1" : {"subname" :"vminrg1"},
-    "techsubnet2" : {"subname" :"vminrg2"},
-    "techsubnet3" : { "subname" : "appgatewayinrg1"},
-    "techsubnet4" : { "subname" : "AzureBastionSubnet"},
-    "techursubnet5" : { "subname" : "AzureBastionSubnet"},
+    "techsubnet1" : {
+        "subname" :"vminrg1"
+    },
+    "techsubnet2" : {
+        "subname" :"vminrg2"
+    },
+    "techsubnet3" : { 
+        "subname" : "appgatewayinrg1"
+    },
+    "techsubnet4" : {
+         "subname" : "AzureBastionSubnet"
+    },
+    "techursubnet5" : { 
+        "subname" : "AzureBastionSubnet"
+    },
     "techaddress" : ["10.0.1.0/24"],
     "techaddresss" : ["80.0.1.0/24"],
     "techaddressss" : ["10.0.2.0/24"],
     "techaddress4" : ["10.0.3.0/26"],
     "techaddress5" : ["80.0.2.0/26"],
-    "techurnic1" : {"nicname" : "techurvm1nic","ipconfig" :{"ipname" : "techurvm1ipconfig" }},
-    "techurpip1" : {"ipname" : "techurvm1pip"},
-    "techurvm1" : {"publisher" : "MicrosoftWindowsServer", 
-        "offer" : "WindowsServer","sku" : "2019-Datacenter", "osdiskname" : "techurvmosdisk", 
-        "caching" : "ReadWrite",  "hostname" : "techurvm1", "username" : "techurvm1", 
-        "vmsize": "Standard_DS1_v2", "create_option":"FromImage","vmname":"techurvm1",
-        "password" : "Viswa@333","location":"Australia Central"},
-    "techurnic2" : {"nicname" : "techurvm2nic", "ipconfig" :{"ipname" : "techurvm2ipconfig"}},
-    "techurpip2" : {"ipname" : "techurvm2pip"},"publicip3" : {"ipname" : "vm1bastionpip3"},
-    "publicip4" : {"ipname" : "vm2bastionpip4"},"vm1bastion" :"techurvm1bastion1",
-    "techurvm2": {"publisher" : "MicrosoftWindowsServer",
-        "offer" : "WindowsServer", "sku" : "2019-Datacenter", "osdiskname" : "techurvmosdisk",
-        "vmsize" : "Standard_DS1_v2", "create_option" : "FromImage", "vmname" : "techurvm2",
-        "password" : "Viswa@333", "location" : "Australia Central","username":"techurvm2",
-        "hostname" : "techurvm2","caching" : "ReadWrite","vm2bastion" : "techurvm2bastion2"
-        
-         },
-    "nsgtech" : { "nsgname" : "techurnsg1"},
-    "nsgtech1" : { "nsgname" : "techurnsg2"},
-    "techurappserviceplan1" : {"planname" : "techurappplan"},
-    "techurappservice" : {"servicename" : "techurappservice1"},
-   "appplan1" : {"id" :"appplan1"},
+    "techurnic1" : {
+        "nicname" : "techurvm1nic",
+        "ipconfig":{
+            "ipname" : "techurvm1ipconfig" 
+        }
+    },
+    "techurpip1" : {
+        "ipname" : "techurvm1pip"
+    },
+    "techurvm1" : {
+        "publisher" : "MicrosoftWindowsServer", 
+        "offer" : "WindowsServer",
+        "sku" : "2019-Datacenter", 
+        "osdiskname" : "techurvmosdisk", 
+        "caching" : "ReadWrite",
+        "hostname" : "techurvm1", 
+        "username" : "techurvm1", 
+        "vmsize": "Standard_DS1_v2", 
+        "create_option":"FromImage",
+        "vmname":"techurvm1",
+        "password" : "Viswa@333",
+        "location":"Australia Central",
+        "vm1bastion" :"techurvm1bastion1",
+        "ipconfig" :{
+            "ipname" : "techurvm1ipconfig"
+        } 
+    },
+    "techurnic2" : {
+        "nicname" : "techurvm2nic", 
+        "ipconfig" :{
+            "ipname" : "techurvm2ipconfig"
+        }
+    },
     
+    "techurpip2" : {
+        "ipname" : "techurvm2pip"
+    },
+    "publicip3" : {
+        "ipname" : "vm1bastionpip3"
+    },
+    "publicip4" : {
+        "ipname" : "vm2bastionpip4"
+    },
+    "techurvm2": {
+        "publisher" : "MicrosoftWindowsServer",
+        "offer" : "WindowsServer", 
+        "sku" : "2019-Datacenter", 
+        "osdiskname" : "techurvmosdisk",
+        "vmsize" : "Standard_DS1_v2", 
+        "create_option" : "FromImage", 
+        "vmname" : "techurvm2",
+        "password" : "Viswa@333", 
+        "location" : "Australia Central",
+        "username":"techurvm2",
+        "hostname" : "techurvm2",
+        "caching" : "ReadWrite",
+        "vm2bastion" : "techurvm2bastion2",
+        "ipconfig" :{
+            "ipname" : "techurvm2ipconfig"
+        }
+    },
+    "nsgtech" : {
+        "nsgname" : "techurnsg1"
+    },
+    "nsgtech1" : { 
+        "nsgname" : "techurnsg2"
+    },
+    "techurappserviceplan1" : {
+        "planname" : "techurappplan"
+    },
+    "techurappservice" : {
+        "servicename" : "techurappservice1"
+    },
+    "appplan1" : {
+        "id" :"appplan1"
+    }, 
     
-"techurappgwpip" : {"pipname" : "appgwpip"},
-"techappgw" : { "appname" : "techurappgw", "location" : "Australia Central",
-     "sku" : "Standard_Small", "tier" : "Standard", "capacity" : "2", 
-     "ipconfig" : {"gipname" : "techurappgwconfig"},
-     "subnetoutput3" : "azurerm_subnet subnet3",
-     "fport" : "techurfport", "port" : "80",
-     "fipconfig" : {"fipname" : "techurfip"}, "appgwpip" : {"id" : "appgwpip"},
-     "bapname" : "techurbapool", "bhttpname" : "techurbahttpsetting", 
-     "listname" : "listener1", "listname2": "listener2",
-     "rrrulename" : "techurroutingrule1", "type" : "Basic","routrulename":"vmpathbasedrouting", 
-     "urlpathname":"vmurlpath" , "urlpathmapname": "vmurlpathconfig", "pathrulename1": "imagespathrule",
-     "pathrulename2": "docspathrule"
-}
-
+    "techurappgwpip" : {
+        "pipname" : "appgwpip"
+    },
     
+    "techappgw" : { 
+        "appname" : "techurappgw", 
+        "location" : "Australia Central",
+        "sku" : "Standard_Small", 
+        "tier" : "Standard", 
+        "capacity" : "2", 
+        "ipconfig" : {
+            "gipname" : "techurappgwconfig"
+        },
+        "subnetoutput3" : "azurerm_subnet subnet3",
+        "fport" : "techurfport", 
+        "port" : "80",
+        "fipconfig" : {
+            "fipname" : "techurfip"
+        }, 
+        "appgwpip" : {
+            "id" : "appgwpip"
+        },
+        "bapname" : "techurbapool", 
+        "bhttpname" : "techurbahttpsetting", 
+        "listname" : "listener1", 
+        "listname2": "listener2",
+        "rrrulename" : "techurroutingrule1", 
+        "type" : "Basic",
+        "routrulename":"vmpathbasedrouting", 
+        "urlpathname":"vmurlpath" , 
+        "urlpathmapname": "vmurlpathconfig", 
+        "pathrulename1": "imagespathrule",
+        "pathrulename2": "docspathrule"
+    }
 }
