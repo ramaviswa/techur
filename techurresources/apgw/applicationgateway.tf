@@ -47,13 +47,6 @@ resource "azurerm_application_gateway" "applicationgateway" {
     fqdns = [var.webappoutput]
   }
 
-backend_http_settings { 
-   name = var.appgw.bhttpname
-   cookie_based_affinity = "Disabled"
-   port = 80
-   protocol = "Http"
-   request_timeout = 60
-}
 backend_http_settings  {
   name = "Virtualmachine2docbackendpool-httpname"
   cookie_based_affinity = "Disabled"
@@ -101,8 +94,8 @@ request_routing_rule {
   name = var.appgw.rrrulename
   rule_type = var.appgw.type
   http_listener_name = var.appgw.listname
-  backend_address_pool_name = var.appgw.bapname
-  backend_http_settings_name = var.appgw.bhttpname
+  backend_address_pool_name =  "webappbackendpool"
+  backend_http_settings_name = "webappbackendpool-httpname"
 }
 
 request_routing_rule {
