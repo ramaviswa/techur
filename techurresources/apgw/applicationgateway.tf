@@ -46,64 +46,69 @@ resource "azurerm_application_gateway" "applicationgateway" {
     name = "webappbackendpool"
     fqdns = [var.webappoutput]
   }
+  backend_http_settings { 
+   name = var.appgw.bhttpname
+   cookie_based_affinity = "Disabled"
+   port = 80
+   protocol = "Http"
+   request_timeout = 60
+  }
 
-backend_http_settings  {
-  name = "Virtualmachine2docbackendpool-httpname"
-  cookie_based_affinity = "Disabled"
-  port = 80
-  protocol = "Http"
-  request_timeout = 60
-
-}
-backend_http_settings {
-  name = "Virtualmachine1imagesbackendpool-httpname" 
-  cookie_based_affinity = "Disabled"
-  port = 80
-  protocol = "Http"
-  request_timeout = 60
-
-}
-backend_http_settings {
-  name = "webappbackendpool-httpname"
-  cookie_based_affinity = "Disabled"
-  port = 443
-  protocol = "Https"
-  request_timeout = 60
+  backend_http_settings  {
+     name = "Virtualmachine2docbackendpool-httpname"
+    cookie_based_affinity = "Disabled"
+    port = 80
+    protocol = "Http"
+    request_timeout = 60
+  }
   
-  pick_host_name_from_backend_address  = true
-}
+  backend_http_settings {
+    name = "Virtualmachine1imagesbackendpool-httpname" 
+    cookie_based_affinity = "Disabled"
+    port = 80
+    protocol = "Http"
+    request_timeout = 60
+  }
+  
+  backend_http_settings {
+    name = "webappbackendpool-httpname"
+    cookie_based_affinity = "Disabled"
+    port = 443
+    protocol = "Https"
+    request_timeout = 60
+    pick_host_name_from_backend_address  = true
+  }
 
-http_listener {
-  name = var.appgw.listname
-  frontend_ip_configuration_name = var.appgw.fipconfig.fipname
-  frontend_port_name = var.appgw.fport
-  protocol = "Http"
-}
+  http_listener {
+    name = var.appgw.listname
+    frontend_ip_configuration_name = var.appgw.fipconfig.fipname
+    frontend_port_name = var.appgw.fport
+    protocol = "Http"
+  }
 
  
-http_listener {
-   name = var.appgw.listname2
-   frontend_ip_configuration_name = var.appgw.fipconfig.fipname
-   frontend_port_name = var.appgw.fport
-   host_name = "0eda3588-b2bb-40c3-bd9f-b391522393cc.cloudapp.net"
-   protocol = "Http"
+  http_listener {
+     name = var.appgw.listname2
+    frontend_ip_configuration_name = var.appgw.fipconfig.fipname
+    frontend_port_name = var.appgw.fport
+    host_name = "0eda3588-b2bb-40c3-bd9f-b391522393cc.cloudapp.net"
+    protocol = "Http"
+  }
 
- }
+  request_routing_rule {
+    name = var.appgw.rrrulename
+    rule_type = var.appgw.type
+    http_listener_name = var.appgw.listname
+    backend_address_pool_name =  "webappbackendpool"
+    backend_http_settings_name = "webappbackendpool-httpname"
+  }
 
-request_routing_rule {
-  name = var.appgw.rrrulename
-  rule_type = var.appgw.type
-  http_listener_name = var.appgw.listname
-  backend_address_pool_name =  "webappbackendpool"
-  backend_http_settings_name = "webappbackendpool-httpname"
-}
-
-request_routing_rule {
-  name = var.appgw.routrulename
-  rule_type = "PathBasedRouting"
-  http_listener_name = var.appgw.listname2
-  url_path_map_name = var.appgw.urlpathmapname
- }
+  request_routing_rule {
+    name = var.appgw.routrulename
+    rule_type = "PathBasedRouting"
+    http_listener_name = var.appgw.listname2
+    url_path_map_name = var.appgw.urlpathmapname
+  }
 
  url_path_map  {
    name = var.appgw.urlpathmapname
