@@ -6,7 +6,7 @@
         "rgname":"techurrg2"
     },
     "loc":"central india", 
-    "loca" : "australia central",
+    "loca" : "east asia",
     "techvnet1" : {
         "vnetname" : "techurvnet1inrg1"
     },
@@ -37,13 +37,13 @@
     "techaddress4" : ["10.0.3.0/26"],
     "techaddress5" : ["80.0.2.0/26"],
     "techurnic1" : {
-        "nicname" : "techurvm1nic",
+        "nicname" : "techurvm1nic01",
         "ipconfig":{
-            "ipname" : "techurvm1ipconfig" 
+            "ipname" : "techurvm1ipconfig2" 
         }
     },
     "techurpip1" : {
-        "ipname" : "techurvm1pip"
+        "ipname" : "techurvm1pip01"
     },
     "techurvm1" : {
         "publisher" : "MicrosoftWindowsServer", 
@@ -58,26 +58,26 @@
         "vmname":"techurvm1",
         "password" : "Viswa@333",
         "location":"East Asia",
-        "vm1bastion" :"techurvm1bastion1",
+        "vm1bastion" :"techurvm1bastion01",
         "ipconfig" :{
             "ipname" : "techurvm1ipconfig"
         } 
     },
     "techurnic2" : {
-        "nicname" : "techurvm2nic", 
+        "nicname" : "techurvm2nic02", 
         "ipconfig" :{
-            "ipname" : "techurvm2ipconfig"
+            "ipname" : "techurvm2ipconfig2"
         }
     },
     
     "techurpip2" : {
-        "ipname" : "techurvm2pip"
+        "ipname" : "techurvm2pip02"
     },
     "publicip3" : {
-        "ipname" : "vm1bastionpip3"
+        "ipname" : "vm1bastionpip03"
     },
     "publicip4" : {
-        "ipname" : "vm2bastionpip4"
+        "ipname" : "vm2bastionpip04"
     },
     "techurvm2": {
         "publisher" : "MicrosoftWindowsServer",
@@ -92,7 +92,7 @@
         "username":"techurvm2",
         "hostname" : "techurvm2",
         "caching" : "ReadWrite",
-        "vm2bastion" : "techurvm2bastion2",
+        "vm2bastion" : "techurvm2bastion02",
         "ipconfig" :{
             "ipname" : "techurvm2ipconfig"
         }
