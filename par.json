@@ -57,7 +57,7 @@
         "create_option":"FromImage",
         "vmname":"techurvm1",
         "password" : "Viswa@333",
-        "location":"Australia Central",
+        "location":"East Asia",
         "vm1bastion" :"techurvm1bastion1",
         "ipconfig" :{
             "ipname" : "techurvm1ipconfig"
@@ -88,7 +88,7 @@
         "create_option" : "FromImage", 
         "vmname" : "techurvm2",
         "password" : "Viswa@333", 
-        "location" : "Australia Central",
+        "location" : "East Asia",
         "username":"techurvm2",
         "hostname" : "techurvm2",
         "caching" : "ReadWrite",
