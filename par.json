@@ -5,8 +5,15 @@
     "techurresourcegroup2" : {
         "rgname":"techurrg2"
     },
+
+    "recoveryrg" : {
+        "name" : "techurrecoveryservicevault"
+
+    },
+
     "loc":"central india", 
     "loca" : "east asia",
+    "locationrecovery" : "east asia",
     "techvnet1" : {
         "vnetname" : "techurvnet1inrg1"
     },

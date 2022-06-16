@@ -1,10 +1,11 @@
-resource "azurerm_resource_group" "recoveryrg" {
+
+/*resource "azurerm_resource_group" "recoveryrg" {
     name = var.rsvault.name
     location = var.location
 
     
   
-}
+}*/
 /*
 resource "azurerm_recovery_services_vault" "recoverysv" {
     name = var.recovryservicevult.rsvname

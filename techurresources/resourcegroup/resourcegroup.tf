@@ -9,10 +9,19 @@ resource "azurerm_resource_group" "rg2" {
   location = var.location 
 }
 
+resource "azurerm_resource_group" "recoveryrg" {
+    name = var.rsvault.name
+    location = var.locat
+}
+
 output "rg1out"{
   value = azurerm_resource_group.rg1
 }
 
 output "rg2out" {
   value = azurerm_resource_group.rg2
+}
+
+output "rg3out" {
+  value = azurerm_resource_group.recoveryrg
 }

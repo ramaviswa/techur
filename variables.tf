@@ -38,4 +38,6 @@ variable "publicip4" {}
 variable "rsvault1" {}
 variable "location2" {}
 variable "recovryservicevult1" {}
+variable "locationrecovery" {}
+variable "recoveryrg" {}
 

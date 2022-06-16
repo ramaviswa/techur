@@ -39,6 +39,8 @@ module "techurrg" {
   resourcegroup1 = var.techurresourcegroup1
   resourcegroup2 = var.techurresourcegroup2
   location       = var.loc
+  recoveryrg     = var.recoveryrg
+  locat          = var.locationrecovery
 }
 
 module "techurvnet" {
