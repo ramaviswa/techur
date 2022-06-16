@@ -11,8 +11,19 @@ terraform {
       source = "hashicorp/azurerm"
       version = "3.6.0"
     }
+    azuread = {
+      source = "hashicorp/azuread"
+    }
   }
 }
+
+provider "azuread" {
+  # Configuration options
+}
+
+    
+  
+
 
 ##The below lines for features details for azurerm
 
