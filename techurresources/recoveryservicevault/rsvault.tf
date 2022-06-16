@@ -5,13 +5,13 @@ resource "azurerm_resource_group" "recoveryrg" {
     
   
 }
-
+/*
 resource "azurerm_recovery_services_vault" "recoverysv" {
     name = var.recovryservicevult.rsvname
-    location = var.location
-    resource_group_name = var.rsvault.name
+    location = resource_group.recoveryrg.location
+    resource_group_name = resource_group.recoveryrg.name
     sku = "Standard"
 
     soft_delete_enabled = true
 
-}
+}*/
