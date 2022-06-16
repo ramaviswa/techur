@@ -36,6 +36,6 @@ variable "techaddress5" {}
 variable "publicip3" {}
 variable "publicip4" {}
 variable "rsvault1" {}
-variable "location1" {}
+variable "location2" {}
 variable "recovryservicevult1" {}
 
