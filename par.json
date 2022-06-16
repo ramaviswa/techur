@@ -14,7 +14,7 @@
         "vnetname" : "techurvnet2inrg2"
     },
     "vnetaddress1" : ["10.0.0.0/16"], 
-    "location1": "australia central",    
+    "location1": "east asia",    
     "vnetaddress3" : ["80.0.0.0/16"],
     "techsubnet1" : {
         "subname" :"vminrg1"
@@ -57,7 +57,7 @@
         "create_option":"FromImage",
         "vmname":"techurvm1",
         "password" : "Viswa@333",
-        "location":"East Asia",
+        "location":"east asia",
         "vm1bastion" :"techurvm1bastion01",
         "ipconfig" :{
             "ipname" : "techurvm1ipconfig"
@@ -119,7 +119,7 @@
     
     "techappgw" : { 
         "appname" : "techurappgw", 
-        "location" : "Australia Central",
+        "location" : "east asia",
         "sku" : "Standard_Small", 
         "tier" : "Standard", 
         "capacity" : "2", 
