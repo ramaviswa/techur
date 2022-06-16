@@ -129,7 +129,7 @@ module "appgw" {
 }
 
 module "recoveryservicevault" {
-source = "./techurresources/recoveryservicevaule"
+source = "./techurresources/recoveryservicevault"
 rsvault = var.rsvault1
 location = var.location1
 recovryservicevult = var.recovryservicevult1
