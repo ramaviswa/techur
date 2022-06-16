@@ -98,10 +98,10 @@
         }
     },
     "nsgtech" : {
-        "nsgname" : "techurnsg1"
+        "nsgname" : "techurnsg01"
     },
     "nsgtech1" : { 
-        "nsgname" : "techurnsg2"
+        "nsgname" : "techurnsg02"
     },
     "techurappserviceplan1" : {
         "planname" : "techurappplan"
