@@ -146,5 +146,23 @@
         "urlpathmapname": "vmurlpathconfig", 
         "pathrulename1": "imagespathrule",
         "pathrulename2": "docspathrule"
+    },
+
+    "rsvault1" : {
+        "name" : "techurservicevaultrg",
+        "location1" : "east asia"
+        
+    },
+
+    "recovryservicevult1" : {
+        "rsvname" : "techurrecoveryservicevault",
+        "location1" : "east asia"
+    
+
+
     }
+    
+        
+    
+    
 }

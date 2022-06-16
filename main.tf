@@ -127,3 +127,12 @@ module "appgw" {
   webappoutput = module.techurappplan.WebappHostname
   vm1nic1outputipconfigname = module.techurvms.vm1nic1outputipconfigname
 }
+
+module "recoveryservicevault" {
+source = "./techurresources/recoveryservicevaule"
+rsvault = var.rsvault1
+location = var.location1
+recovryservicevult = var.recovryservicevult1
+
+
+}
