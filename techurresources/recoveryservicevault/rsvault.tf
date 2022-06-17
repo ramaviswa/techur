@@ -6,7 +6,7 @@
     
   
 }*/
-/*
+
 resource "azurerm_recovery_services_vault" "recoverysv" {
     name = var.recovryservicevult.rsvname
     location = resource_group.recoveryrg.location
@@ -15,4 +15,4 @@ resource "azurerm_recovery_services_vault" "recoverysv" {
 
     soft_delete_enabled = true
 
-}*/
+}

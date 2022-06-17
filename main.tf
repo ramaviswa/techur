@@ -39,8 +39,8 @@ module "techurrg" {
   resourcegroup1 = var.techurresourcegroup1
   resourcegroup2 = var.techurresourcegroup2
   location       = var.loc
-  recoveryrg     = var.recoveryrg
-  locat          = var.locationrecovery
+  rsvaultrg      = var.recoveryrg
+  locat          = var.recoverylocation
 }
 
 module "techurvnet" {
@@ -132,9 +132,9 @@ module "appgw" {
 
 module "recoveryservicevault" {
 source = "./techurresources/recoveryservicevault"
-rsvault = var.rsvault1
-location = var.location2
 recovryservicevult = var.recovryservicevult1
+locat          = var.recoverylocation
+rsvaultrg      = var.recoveryrg
 
 
 }

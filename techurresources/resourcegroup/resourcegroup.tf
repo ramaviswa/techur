@@ -10,7 +10,7 @@ resource "azurerm_resource_group" "rg2" {
 }
 
 resource "azurerm_resource_group" "recoveryrg" {
-    name = var.rsvault.name
+    name = var.rsvaultrg.name
     location = var.locat
 }
 

@@ -7,13 +7,14 @@
     },
 
     "recoveryrg" : {
-        "name" : "techurrecoveryservicevault"
+        "name" : "techurrecoveryservicevaultrg",
+        "recoverylocation"  : "east asia"
 
     },
 
     "loc":"central india", 
     "loca" : "east asia",
-    "locationrecovery" : "east asia",
+    "recoverylocation" : "east asia",
     "techvnet1" : {
         "vnetname" : "techurvnet1inrg1"
     },
@@ -155,21 +156,22 @@
         "pathrulename2": "docspathrule"
     },
 
-    "rsvault1" : {
-        "name" : "techurservicevaultrg",
-        "location2" : "east asia"
-        
-    },
-
     "recovryservicevult1" : {
-        "rsvname" : "techurrecoveryservicevault",
-        "location2" : "east asia"
+        "rsvname"    : "techurrecoveryservicevault",
+        "recoveryrg" : "techurrecoveryservicevaultrg",
+        "recoverylocation" : "east asia"
+
+
+    
+        
+    }
+
+    
     
 
 
-    }
+}
     
         
     
     
-}
