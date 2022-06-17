@@ -157,9 +157,8 @@
     },
 
     "recovryservicevult1" : {
-        "rsvname"    : "techurrecoveryservicevault",
-        "recoveryrg" : "techurrecoveryservicevaultrg",
-        "recoverylocation" : "east asia"
+        "rsvname"    : "techurrecoveryservicevault"
+    
 
 
     

@@ -35,9 +35,10 @@ variable "techursubnet5" {}
 variable "techaddress5" {}
 variable "publicip3" {}
 variable "publicip4" {}
-variable "rsvault1" {}
-variable "location2" {}
-variable "recovryservicevult1" {}
-variable "recoverylocation" {}
+
 variable "recoveryrg" {}
+variable "recoverylocation" {}
+  variable "recovryservicevult1" {}
+
+
 
