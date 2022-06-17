@@ -19,7 +19,7 @@ resource "azurerm_backup_policy_vm" "backupvm" {
 
     backup {
       frequency = "Daily"
-      time = "23.00"
+      time = "23:00"
     }
 
      retention_daily {
