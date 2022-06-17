@@ -13,7 +13,7 @@ resource "azurerm_recovery_services_vault" "recoverysv" {
 resource "azurerm_backup_policy_vm" "backupvm" {
     name = var.backupvm.name
     resource_group_name = azurerm_recovery_services_vault.recoverysv.name
-    recovery_vault_name = azurerm_recovery_services_vault.recoverysv.rsname
+    recovery_vault_name = azurerm_recovery_services_vault.recoverysv.resource_group_name
 
     timezone = "UTC"
 
