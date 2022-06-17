@@ -37,8 +37,9 @@ variable "publicip3" {}
 variable "publicip4" {}
 
 variable "recoveryrg" {}
+variable "recovryservicevult1" {}
+
 variable "recoverylocation" {}
-  variable "recovryservicevult1" {}
 
 
 
