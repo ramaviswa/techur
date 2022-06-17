@@ -40,6 +40,8 @@ variable "recoveryrg" {}
 variable "recovryservicevult1" {}
 
 variable "recoverylocation" {}
-
+variable "techbackupvmpolicy" {
+  
+}
 
 

@@ -159,18 +159,15 @@
     "recovryservicevult1" : {
         "rsvname"    : "techurrecoveryservicevault",
         "name" : "techurrecoveryservicevaultrg"
+    },
 
-    
-
-
-    
-        
+    "techbackupvmpolicy" : {
+        "name" : "techurbackupvmpolicy"
     }
 
-    
-    
 
 
+    
 }
     
         
