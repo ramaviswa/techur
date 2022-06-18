@@ -163,6 +163,14 @@
 
     "techbackupvmpolicy" : {
         "name" : "techurbackupvmpolicy"
+    },
+    "sourcevm":{
+        "backup1":{
+            "vm":"vm1"
+        },
+        "backup2":{
+            "vm":"vm2"
+        }
     }    
 }
     

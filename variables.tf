@@ -43,6 +43,8 @@ variable "recoverylocation" {}
 variable "techbackupvmpolicy" {
   
 }
-
+variable "sourcevm" {
+  
+}
 
 

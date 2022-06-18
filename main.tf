@@ -131,13 +131,12 @@ module "appgw" {
 }
 
 module "recoveryservicevault" {
-source = "./techurresources/recoveryservicevault"
-recovryservicevult = var.recovryservicevult1
-rsvaultrg      = var.recoveryrg
-locat          = var.recoverylocation
-backupvm = var.techbackupvmpolicy
-sourcevm = module.techurvms.vm1outputid
-
-
-
+  source = "./techurresources/recoveryservicevault"
+  recovryservicevult = var.recovryservicevult1
+  rsvaultrg      = var.recoveryrg
+  locat          = var.recoverylocation
+  backupvm = var.techbackupvmpolicy
+  sourcevm = var.sourcevm
+  sourcevm1 = module.techurvms.vm1outputid
+  sourcevm2 = module.techurvms.vm2outputid
 }
