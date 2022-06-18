@@ -149,4 +149,13 @@ output "vm1nic1outputipconfigname"{
 
 output "vm2outputprivate_ip_addresses" {
      value = azurerm_network_interface.nic2.ip_configuration[0].private_ip_address
+
+}
+
+output "vm1outputid"{
+     value = azurerm_virtual_machine.vm1.id
+}
+
+output "vm2outputid" {
+    value = azurerm_virtual_machine.vm2.id
 }
